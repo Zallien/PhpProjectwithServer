@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Assets/logo03.png" type="image/x-icon">
     <title>Login</title>
 </head>
 <body>
@@ -16,19 +17,30 @@
                 <h2>Login</h2>
                 <div>
                     <label for="">Username</label>
-                    <input type="text" id="username">
+                    <input type="text" id="username" placeholder="Enter Username">
                 </div>
 
                 <div>
                     <label for="">Password</label>
-                    <input type="text" id="Password">
+                    <input type="text" id="Password" placeholder="Enter Password">
                 </div>
 
-                <button>Login</button>
+                <button id="LoginBTN">Login</button>
+                <audio src="Assets/outro.mp3" controls hidden></audio>
             </form>
 
 
         </div>
+
+        <div class="loading hidediv" id="loading">
+            <div class="loader">
+                <div class="inner one"></div>
+                <div class="inner two"></div>
+                <div class="inner three"></div>
+            </div>
+            <h2>Loading</h2>
+        </div>
     </div>
 </body>
+<script src="app.js"></script>
 </html>
