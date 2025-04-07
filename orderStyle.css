@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.main{
+    background-image:linear-gradient(rgba(237, 37, 37, 0.2),rgba(0, 0, 0, 0.2)), url(Assets/jolli01.png);
+    width: 100%;
+    height: 100dvh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.main nav{
+    background-color: #c41316;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    flex-grow: 0;
+}
+
+.main nav img{
+    width: 50px;
+}
+
+.main nav label{
+    color: white;
+    text-shadow: 1px 1px black;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.details {
+    width: fit-content;
+    padding: 20px 30px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    overflow: scroll; 
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    background-color: rgba(0, 0, 0, 0.161);
+    margin: 0 auto;
+}
+
+
+.menunav,
+.menuitems,
+.totallying{
+    background-color: rgb(122, 122, 18);
+    width: 20%;
+    margin: 0 5px;
+
+}
+
+.menunav{
+    width: 260px;
+    background-color: white;
+    padding: 20px 0;
+    padding-left: 20px;
+    margin: 0;
+    
+}
+
+.menunav h2{
+    font-size: 1.5rem;
+    padding: 10px 0;
+}
+
+.menunav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.menunav ul li{
+    font-size: 24px;
+    padding: 15px 0;
+    padding-right: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 300ms ease-in-out;
+}
+
+.menunav ul li:hover{
+    background-color: rgb(227, 220, 220);
+}
+
+.menunav ul li:hover img{
+    scale: 1.25;
+}
+
+.menunav ul li img{
+    width: 20px;
+    height: 20px;
+    margin-left: 12px;
+    transition: all 300ms ease-in-out;
+}
+
+.menuitems{
+    background-color: rgba(29, 28, 28, 0.188);
+    background-color: transparent;
+    margin: 0;
+    width: 700px;
+    padding: 20px;
+    overflow: auto;
+
+}
+
+.menuitems::-webkit-scrollbar{
+    display: none;
+}
+
+.menuitems .navigator{
+    background-color: white;
+    font-size: 20px;
+    padding: 10px 0;
+    margin-bottom: 50px;
+}
+
+.menuitems .navigator label{
+    font-weight: bold;
+    font-size: 23px;
+    padding: 10px;
+}
+
+.menuitems .listofitems{
+    background-color: white;
+    height: 100vh;
+
+}
+
+.totallying{
+    background-color: white;
+    margin: 0;
+    width: 250px;
+}
