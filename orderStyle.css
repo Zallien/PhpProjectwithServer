@@ -59,7 +59,8 @@
     background-color: rgb(122, 122, 18);
     width: 20%;
     margin: 0 5px;
-
+    border: thin solid black;
+    border-radius: 20px;
 }
 
 .menunav{
@@ -94,8 +95,10 @@
     transition: all 300ms ease-in-out;
 }
 
-.menunav ul li:hover{
+.menunav ul li:hover,
+.menunav ul li.active{
     background-color: rgb(227, 220, 220);
+    padding-left: 20px;
 }
 
 .menunav ul li:hover img{
@@ -116,7 +119,7 @@
     width: 700px;
     padding: 20px;
     overflow: auto;
-
+    border: none;
 }
 
 .menuitems::-webkit-scrollbar{
@@ -128,6 +131,8 @@
     font-size: 20px;
     padding: 10px 0;
     margin-bottom: 50px;
+    border: thin solid black;
+    border-radius: 20px;
 }
 
 .menuitems .navigator label{
@@ -138,9 +143,59 @@
 
 .menuitems .listofitems{
     background-color: white;
-    height: 100vh;
-
+    height: auto;
+    padding: 20px 10px;
+    border: thin solid black;
+    border-radius: 20px;
 }
+
+.menuitems .listofitems .containersforfoodcards{
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-auto-rows: 250px;
+    gap: 12px;
+}
+
+.menuitems .listofitems .containersforfoodcards.hiddenlist{
+    display: none;
+}
+
+.menuitems .listofitems .foodcard{
+    border: thin solid black;
+    width: fit-content;
+    height: auto;
+    overflow: hidden;
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.menuitems .listofitems .foodcard img{
+    width: 100%;
+    object-fit: contain;
+    height: 150px;
+    margin-top: 10px;
+}
+
+.menuitems .listofitems .foodcard .info{
+    background-color: #c41316;
+}
+
+.menuitems .listofitems .foodcard label{
+    display: block;
+    text-align: center;
+    font-size: 21px;
+    color: white;
+    text-shadow: 1px 1px black;
+    padding: 3px 0;
+}
+
+
+
 
 .totallying{
     background-color: white;
