@@ -1,6 +1,7 @@
 
 const menunavs = document.querySelectorAll(".menunav ul li");
 const sections = document.querySelectorAll(".containersforfoodcards");
+const PayBTN = document.getElementById("paybtn")
 
 menunavs.forEach((menuitem, i) =>{
 
@@ -30,3 +31,8 @@ menunavs.forEach((menuitem, i) =>{
 
 
 });
+
+PayBTN.addEventListener('click', function(){
+    const loadingElement = document.getElementById("loading");
+    loadingElement.classList.remove("hidediv");
+})

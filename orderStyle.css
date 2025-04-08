@@ -200,5 +200,185 @@
 .totallying{
     background-color: white;
     margin: 0;
-    width: 250px;
+    width: 300px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
 }
+
+.totallying .allitems{
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+    overflow: auto;
+}
+
+.totallying .allitems::-webkit-scrollbar{
+    display: none;
+}
+
+.totallying h3{
+    margin-bottom: 20px;
+}
+
+.totallying table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+/* 
+.totallying table td,
+.totallying table th{
+    border: thin solid black;
+} */
+
+.totallying table th{
+    font-size: 20px;
+    border-bottom: thin solid black;
+}
+
+.totallying table td{
+    padding: 5px 0;
+}
+
+.totallying .totals{
+    border-top: thin solid black;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.totallying .totals label{
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.totallying .totals input{
+    font-weight: 500;
+    font-size: 18px;
+    width: 200px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+.totallying #paybtn{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
+    background-color: #c41316;
+    color: white;
+    text-shadow: 1px 1px black;
+    transition: all 300ms ease-in-out;
+}
+
+.totallying #paybtn:hover{
+    background-color: #c61e20;
+}
+
+/* loading */
+.loader {
+    position: absolute;
+    top: calc(50% - 32px);
+    left: calc(50% - 32px);
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    perspective: 800px;
+  }
+  
+  .inner {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;  
+  }
+  
+  .inner.one {
+    left: 0%;
+    top: 0%;
+    animation: rotate-one 1s linear infinite;
+    border-bottom: 3px solid #EFEFFA;
+  }
+  
+  .inner.two {
+    right: 0%;
+    top: 0%;
+    animation: rotate-two 1s linear infinite;
+    border-right: 3px solid #EFEFFA;
+  }
+  
+  .inner.three {
+    right: 0%;
+    bottom: 0%;
+    animation: rotate-three 1s linear infinite;
+    border-top: 3px solid #EFEFFA;
+  }
+  
+  @keyframes rotate-one {
+    0% {
+      transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+  }
+  
+  @keyframes rotate-two {
+    0% {
+      transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+  }
+  
+  @keyframes rotate-three {
+    0% {
+      transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+  }
+
+  .loading{
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: rgba(128, 124, 124, 0.549);
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    transition: 300ms ease-in-out;
+    animation: loadingdivanimation ease-in-out 1s;
+  }
+
+  .loading h2{
+    position: relative;
+    top: 50px;
+    color: white;
+    text-shadow: 2px 2px black;
+  }
+
+  @keyframes loadingdivanimation{
+    0%{
+        opacity: 0.3;
+    }
+    100%{
+        opacity: 1;
+    }
+  }
+
+  .hidediv{
+    display: none;
+  }
