@@ -27,6 +27,33 @@
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
     padding: 20px 0;
+    padding-top: 0;
+}
+
+.centerdiv .selection{
+  width: 100%;
+  display: flex;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.centerdiv .selection button{
+  flex-grow: 1;
+  font-size: 23px;
+  font-weight: bold;
+  padding: 5px 0;
+  background-color: transparent;
+  border: none;
+  color: white;
+  border-bottom: thin solid white;
+  transition: all 300ms ease-out;
+}
+
+.centerdiv .selection button:hover{
+  color: #c41316;
+  background-color: white;
+  scale: 1.08;
 }
 
 .main .centerdiv .logo{

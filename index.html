@@ -12,22 +12,52 @@
     <div class="main">
         
         <div class="centerdiv">
-            <img src="Assets/logo03.png" alt="" width="60" class="logo">
-            <form action="">
-                <h2>Login</h2>
-                <div>
-                    <label for="">Username</label>
-                    <input type="text" id="username" placeholder="Enter Username">
-                </div>
+            <div class="selection">
+                <button class="selectionbtn" data-target="forlogin">Login</button>
+                <button class="selectionbtn" data-target="forregistration">Register</button>
+            </div>
+            <div class="forlogin selectiondivs">
+                <img src="Assets/logo03.png" alt="" width="60" class="logo">
+                <form action="">
+                    <h2>Login</h2>
+                    <div>
+                        <label for="">Username</label>
+                        <input type="text" id="username" placeholder="Enter Username">
+                    </div>
 
-                <div>
-                    <label for="">Password</label>
-                    <input type="text" id="Password" placeholder="Enter Password">
-                </div>
+                    <div>
+                        <label for="">Password</label>
+                        <input type="text" id="Password" placeholder="Enter Password">
+                    </div>
 
-                <button id="LoginBTN">Login</button>
-                <audio src="Assets/outro.mp3" controls autoplay hidden></audio>
-            </form>
+                    <button id="LoginBTN">Login</button>
+                    <audio src="Assets/outro.mp3" controls hidden></audio>
+                </form>
+            </div>
+
+            <div class="forregistration hidediv selectiondivs">
+                <img src="Assets/logo03.png" alt="" width="60" class="logo">
+                <form action="">
+                    <h2>Register</h2>
+                    <div>
+                        <label for="">Username</label>
+                        <input type="text" id="username" placeholder="Enter Username">
+                    </div>
+
+                    <div>
+                        <label for="">Password</label>
+                        <input type="text" id="Password" placeholder="Enter Password">
+                    </div>
+
+                    <div>
+                        <label for="">Re-Type Password</label>
+                        <input type="text" id="retypepassword" placeholder="Enter Password">
+                    </div>
+
+                    <button id="RegisterBTN">Register</button>
+                    <audio src="Assets/outro.mp3" controls hidden></audio>
+                </form>
+            </div>
 
 
         </div>

@@ -1,0 +1,44 @@
+*{
+    padding: 9;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.topnav{
+    background-color: #c41316;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 15px;
+    align-items: center;
+}
+
+.topnav img{
+    width: 40px;
+}
+
+.topnav div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+.topnav div label{
+    font-size: 21px;
+    color: white;
+    text-shadow: 1px 1px black;
+    margin: 0 10px;
+}
+
+.topnav div img{
+    width: 30px;
+    filter: invert(100%);   
+}
+
+.main nav{
+    width: 250px;
+    height: 100dvh;
+    background-color: rgb(16, 16, 16);
+}
