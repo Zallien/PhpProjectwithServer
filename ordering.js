@@ -37,6 +37,8 @@ PayBTN.addEventListener('click', function(){
     loadingElement.classList.remove("hidediv");
 })
 
+
+// OrderStatus
 document.getElementById("OrderstatusBTN").addEventListener('click', ()=>{
 
     document.querySelector(".orderstatus").classList.remove("hidediv")
@@ -45,4 +47,14 @@ document.getElementById("OrderstatusBTN").addEventListener('click', ()=>{
 document.getElementById("orderstatusback").addEventListener('click', ()=>{
 
     document.querySelector(".orderstatus").classList.add("hidediv")
+})
+
+document.getElementById("AccSettings").addEventListener('click', ()=>{
+
+    document.querySelector(".accountsettings").classList.remove("hidediv")
+})
+
+document.getElementById("accsettingsbakc").addEventListener('click', ()=>{
+
+    document.querySelector(".accountsettings").classList.add("hidediv")
 })
