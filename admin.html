@@ -20,103 +20,242 @@
         </div>
         <nav>
             <ul>
-                <li>Dashboard</li>
-                <li>Orders</li>
-                <li>Manage Products</li>
-                <li>Manage Accounts</li>
-                <li>Log Out</li>            
+                <li class="navbuttons active" data-target="dashboardpanel">Dashboard</li>
+                <li class="navbuttons" data-target="orderspanel">Orders</li>
+                <li class="navbuttons" data-target="manageproductpanel">Manage Products</li>
+                <li class="navbuttons" data-target="manageaccountpanel">Manage Accounts</li>
+                <li>Log Out</li>
             </ul>
         </nav>
 
         <div class="details">
-            <div class="dashboardpanel hidediv"></div>
-            <div class="orderspanel">
+            <div class="dashboardpanel panels">
+                <h2>Dashboard</h2>
+            </div>
+            <div class="orderspanel hiddendiv panels">
                 <h2>Orders</h2>
 
-                <div class="orderlists">
-                    <div class="orderinfo">
-                        <img src="Assets/logo03.png" alt="" width="50" class="iconorder">
-                        <label for="" class="orderID"><span>Order ID:</span> 0000002</label>
-                        <label for="" class="orderTime"><span>Order Time:</span> 11:59PM</label>
-                        <div class="orderstatus">
-                            <img src="Assets/logo03.png" alt="" width="30">
-                            <label for="" class="ordertextstatus">Processing. . . </label>
+                <div class="orderscontainer">
+                    <div class="orderlists">
+                        <div class="orderinfo">
+                            <img src="Assets/logo03.png" alt="" width="50" class="iconorder">
+                            <label for="" class="orderID"><span>Order ID:</span> 0000002</label>
+                            <label for="" class="orderTime"><span>Order Time:</span> 11:59PM</label>
+                            <div class="orderstatus">
+                                <img src="Assets/logo03.png" alt="" width="30">
+                                <label for="" class="ordertextstatus">Processing. . . </label>
+                            </div>
+    
                         </div>
-
-                    </div>
-                    <div class="orderinfo">
-                        <img src="Assets/logo03.png" alt="" width="50" class="iconorder">
-                        <label for="" class="orderID"><span>Order ID:</span> 0000002</label>
-                        <label for="" class="orderTime"><span>Order Time:</span> 11:59PM</label>
-                        <div class="orderstatus">
-                            <img src="Assets/logo03.png" alt="" width="30">
-                            <label for="" class="ordertextstatus">Processing. . . </label>
+                        <div class="orderinfo">
+                            <img src="Assets/logo03.png" alt="" width="50" class="iconorder">
+                            <label for="" class="orderID"><span>Order ID:</span> 0000002</label>
+                            <label for="" class="orderTime"><span>Order Time:</span> 11:59PM</label>
+                            <div class="orderstatus">
+                                <img src="Assets/logo03.png" alt="" width="30">
+                                <label for="" class="ordertextstatus">Processing. . . </label>
+                            </div>
+    
                         </div>
-
-                    </div>
-                    <div class="orderinfo">
-                        <img src="Assets/logo03.png" alt="" width="50" class="iconorder">
-                        <label for="" class="orderID"><span>Order ID:</span> 0000002</label>
-                        <label for="" class="orderTime"><span>Order Time:</span> 11:59PM</label>
-                        <div class="orderstatus">
-                            <img src="Assets/logo03.png" alt="" width="30">
-                            <label for="" class="ordertextstatus">Processing. . . </label>
+                        <div class="orderinfo">
+                            <img src="Assets/logo03.png" alt="" width="50" class="iconorder">
+                            <label for="" class="orderID"><span>Order ID:</span> 0000002</label>
+                            <label for="" class="orderTime"><span>Order Time:</span> 11:59PM</label>
+                            <div class="orderstatus">
+                                <img src="Assets/logo03.png" alt="" width="30">
+                                <label for="" class="ordertextstatus">Processing. . . </label>
+                            </div>
+    
                         </div>
-
-                    </div>
-                    <div class="orderinfo">
-                        <img src="Assets/logo03.png" alt="" width="50" class="iconorder">
-                        <label for="" class="orderID"><span>Order ID:</span> 0000002</label>
-                        <label for="" class="orderTime"><span>Order Time:</span> 11:59PM</label>
-                        <div class="orderstatus">
-                            <img src="Assets/logo03.png" alt="" width="30">
-                            <label for="" class="ordertextstatus">Processing. . . </label>
+                        <div class="orderinfo">
+                            <img src="Assets/logo03.png" alt="" width="50" class="iconorder">
+                            <label for="" class="orderID"><span>Order ID:</span> 0000002</label>
+                            <label for="" class="orderTime"><span>Order Time:</span> 11:59PM</label>
+                            <div class="orderstatus">
+                                <img src="Assets/logo03.png" alt="" width="30">
+                                <label for="" class="ordertextstatus">Processing. . . </label>
+                            </div>
+    
                         </div>
-
-                    </div>
-                    <div class="orderinfo">
-                        <img src="Assets/logo03.png" alt="" width="50" class="iconorder">
-                        <label for="" class="orderID"><span>Order ID:</span> 0000002</label>
-                        <label for="" class="orderTime"><span>Order Time:</span> 11:59PM</label>
-                        <div class="orderstatus">
-                            <img src="Assets/logo03.png" alt="" width="30">
-                            <label for="" class="ordertextstatus">Processing. . . </label>
-                        </div>
-
-                    </div>
-                    <div class="orderinfo">
-                        <img src="Assets/logo03.png" alt="" width="50" class="iconorder">
-                        <label for="" class="orderID"><span>Order ID:</span> 0000002</label>
-                        <label for="" class="orderTime"><span>Order Time:</span> 11:59PM</label>
-                        <div class="orderstatus">
-                            <img src="Assets/logo03.png" alt="" width="30">
-                            <label for="" class="ordertextstatus">Processing. . . </label>
-                        </div>
-
-                    </div>
-                    <div class="orderinfo">
-                        <img src="Assets/logo03.png" alt="" width="50" class="iconorder">
-                        <label for="" class="orderID"><span>Order ID:</span> 0000002</label>
-                        <label for="" class="orderTime"><span>Order Time:</span> 11:59PM</label>
-                        <div class="orderstatus">
-                            <img src="Assets/logo03.png" alt="" width="30">
-                            <label for="" class="ordertextstatus">Processing. . . </label>
-                        </div>
-
-                    </div>
-                    <div class="orderinfo">
-                        <img src="Assets/logo03.png" alt="" width="50" class="iconorder">
-                        <label for="" class="orderID"><span>Order ID:</span> 0000002</label>
-                        <label for="" class="orderTime"><span>Order Time:</span> 11:59PM</label>
-                        <div class="orderstatus">
-                            <img src="Assets/logo03.png" alt="" width="30">
-                            <label for="" class="ordertextstatus">Processing. . . </label>
-                        </div>
-
                     </div>
                 </div>
             </div>
+
+            <div class="manageproductpanel hiddendiv panels">
+
+                <h2>Manage Products</h2>
+                
+                <div class="producscontainer">
+                    <div class="navsforproducts">
+                        <label for="">All Products <button id="filterbtn"><img src="Assets/edit.png" alt="" width="20"></button></label>
+                        <button id="addproductBTN">Add</button>
+                    </div>
+                    <div class="productlists">
+
+                        <div class="foodinformations">
+                            <img src="Assets/burger.png" alt="" width="50">
+    
+                            <div class="foodinfointext">
+                                <label for="" id="productname">Cheese Burger</label>
+                                <label for="" id="price"><span>Price: </span>200</label>
+                                <div>
+                                    <button>Delete</button>
+                                    <button>Update</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="foodinformations">
+                            <img src="Assets/burger.png" alt="" width="50">
+    
+                            <div class="foodinfointext">
+                                <label for="" id="productname">Cheese Burger</label>
+                                <label for="" id="price"><span>Price: </span>200</label>
+                                <div>
+                                    <button>Delete</button>
+                                    <button>Update</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="foodinformations">
+                            <img src="Assets/burger.png" alt="" width="50">
+    
+                            <div class="foodinfointext">
+                                <label for="" id="productname">Cheese Burger</label>
+                                <label for="" id="price"><span>Price: </span>200</label>
+                                <div>
+                                    <button>Delete</button>
+                                    <button>Update</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="foodinformations">
+                            <img src="Assets/burger.png" alt="" width="50">
+    
+                            <div class="foodinfointext">
+                                <label for="" id="productname">Cheese Burger</label>
+                                <label for="" id="price"><span>Price: </span>200</label>
+                                <div>
+                                    <button>Delete</button>
+                                    <button>Update</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="foodinformations">
+                            <img src="Assets/burger.png" alt="" width="50">
+    
+                            <div class="foodinfointext">
+                                <label for="" id="productname">Cheese Burger</label>
+                                <label for="" id="price"><span>Price: </span>200</label>
+                                <div>
+                                    <button>Delete</button>
+                                    <button>Update</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="foodinformations">
+                            <img src="Assets/burger.png" alt="" width="50">
+    
+                            <div class="foodinfointext">
+                                <label for="" id="productname">Cheese Burger</label>
+                                <label for="" id="price"><span>Price: </span>200</label>
+                                <div>
+                                    <button>Delete</button>
+                                    <button>Update</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="foodinformations">
+                            <img src="Assets/burger.png" alt="" width="50">
+    
+                            <div class="foodinfointext">
+                                <label for="" id="productname">Cheese Burger</label>
+                                <label for="" id="price"><span>Price: </span>200</label>
+                                <div>
+                                    <button>Delete</button>
+                                    <button>Update</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="foodinformations">
+                            <img src="Assets/burger.png" alt="" width="50">
+    
+                            <div class="foodinfointext">
+                                <label for="" id="productname">Cheese Burger</label>
+                                <label for="" id="price"><span>Price: </span>200</label>
+                                <div>
+                                    <button>Delete</button>
+                                    <button>Update</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="foodinformations">
+                            <img src="Assets/burger.png" alt="" width="50">
+    
+                            <div class="foodinfointext">
+                                <label for="" id="productname">Cheese Burger</label>
+                                <label for="" id="price"><span>Price: </span>200</label>
+                                <div>
+                                    <button>Delete</button>
+                                    <button>Update</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="manageaccountpanel hiddendiv panels">
+                <h2>Manage Accounts</h2>
+
+                <div class="allaccounts">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 5%;">No.</th>
+                                <th style="width: 10%;">Account ID</th>
+                                <th style="width: 40%;">Name</th>
+                                <th style="width: 15%;">Email</th>
+                                <th style="width: 20%;">Username</th>
+                                <th style="width: auto;"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Acc00001</td>
+                                <td>John Cena</td>
+                                <td>Johncena@gmail.com</td>
+                                <td>Johncena001</td>
+                                <td class="actiontd">
+                                    <button><img src="Assets/delete (1).png" alt="" width="14"></button>
+                                    <button><img src="Assets/edit.png" alt="" width="14"></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
+
+        <div class="filteringproductspanel hiddendiv">
+
+            <div class="allcategories">
+                <div class="navsforfiltering">
+                    <h2>All Categories</h2>
+                    <button id="filterback">Back</button>
+                </div>
+
+                <ul>
+                    <li>New Products</li>
+                    <li>Best Sellers</li>
+                    <li>Breakfast</li>
+                    <li>Super Meal</li>
+                    <li>Family Meal</li>
+                </ul>
+            </div>
+        </div>
+
     </div>
 </body>
+<script src="admin.js"></script>
 </html>

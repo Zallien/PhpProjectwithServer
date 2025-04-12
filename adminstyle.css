@@ -49,29 +49,50 @@
 .main nav{
     width: 250px;
     height: 100dvh;
-    background-color: rgb(16, 16, 16);
     color: white;
-    padding: 100px 0;
+    padding: 100px 20px;
     flex-grow: 0;
+    padding-bottom: 40px;
 }
 
 .main nav ul{
     list-style: none;
     padding: 0;
+    background-color: #c41316;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px black;
+    padding: 20px 0;
+    cursor: pointer;
 }
 
 .main nav ul li{
-    font-size: 23px;
+    font-size: 21px;
     font-weight: bold;
     padding: 10px 0;
     padding-left: 10px;
     transition: 300ms ease-in-out;
+    color: white;
+}
+
+.main nav ul li.active{
+    background-color: white;
+    text-shadow: 1px 1px black;
+    scale: 1.05;
+    color: black;
+    border: thin solid black;
+    border-radius: 10px;
+    
 }
 
 .main nav ul li:hover{
-    background-color: #c41316;
+    background-color: white;
     text-shadow: 1px 1px black;
     scale: 1.05;
+    color: black;
+    border: thin solid black;
+    border-radius: 10px;
+    
 }
 
 .details{
@@ -84,6 +105,32 @@
     justify-content: center;
 }
 
+.details .dashboardpanel{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    animation: popup 0.3s ease-in-out;
+}
+
+.details .dashboardpanel.hiddendiv{
+    display: none;
+}
+
+.details .dashboardpanel h2{
+    font-size: 1.8rem;
+    border: thin solid black;
+    padding: 8px 20px;
+    border-radius: 20px;
+    background-color: #c41316;
+    color: white;
+    text-shadow: 1px 1px black;
+    box-shadow: 5px 5px 10px black;
+}
+
+
 .details .orderspanel{
     width: 100%;
     height: 100%;
@@ -91,6 +138,11 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    animation: popup 0.3s ease-in-out;
+}
+
+.details .orderspanel.hiddendiv{
+    display: none;
 }
 
 .details .orderspanel h2{
@@ -104,22 +156,27 @@
     box-shadow: 5px 5px 10px black;
 }
 
-.details .orderspanel .orderlists{
-    border: thin solid black;
+.details .orderspanel .orderscontainer{
     width: 100%;
     height: 500px;
+    background-color: #c41316;
+    box-shadow: 10px 10px 20px black;
     border-radius: 20px;
+    border: thin solid black;
+    padding: 20px;
+    overflow: auto;
+}
+
+.details .orderspanel .orderlists{
+    width: 100%;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     row-gap: 20px;
-    padding: 20px;
-    overflow: auto;
     justify-items: center;
-    background-color: #c41316;
-    box-shadow: 10px 10px 20px black;
 }
 
-.details .orderspanel .orderlists::-webkit-scrollbar{
+.details .orderspanel .orderscontainer::-webkit-scrollbar{
     display: none;
 }
 
@@ -173,12 +230,351 @@
 }
 
 
+.details .manageproductpanel{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    animation: popup 0.3s ease-in-out;
+}
+
+.details .manageproductpanel.hiddendiv{
+    display: none;
+}
+
+.details .manageproductpanel h2{
+    font-size: 1.8rem;
+    border: thin solid black;
+    padding: 8px 20px;
+    border-radius: 20px;
+    background-color: #c41316;
+    color: white;
+    text-shadow: 1px 1px black;
+    box-shadow: 5px 5px 10px black;
+}
+
+.details .manageproductpanel .producscontainer{
+    width: 100%;
+    height: 500px;
+    background-color: #c41316;
+    border: thin solid black;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px black;
+    padding: 20px;
+    padding-top: 10px;
+    overflow: auto;
+    position: relative;
+}
+
+.details .manageproductpanel .navsforproducts{
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    margin-bottom: 10px;
+}
+
+.details .manageproductpanel .navsforproducts label{
+    font-size: 23px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.details .manageproductpanel .navsforproducts label button{
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    padding: 0 5px;
+    margin: 0 10px;
+    border: none;
+}
+
+.details .manageproductpanel .navsforproducts label button img{
+    filter: invert(100%);
+    transition: all 300ms ease-out;
+}
+
+.details .manageproductpanel .navsforproducts label button:hover{
+    scale: 1.08;
+}
+
+.details .manageproductpanel .navsforproducts #addproductBTN{
+    width: 130px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px black;
+    transition: all 300ms ease-in-out;
+}
+
+.details .manageproductpanel .navsforproducts #addproductBTN:hover{
+    box-shadow: 5px 5px 12px black;
+    scale: 1.05s;
+}
+
+.details .manageproductpanel .producscontainer .productlists{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    justify-items: center;
+
+}
+
+.details .manageproductpanel .producscontainer::-webkit-scrollbar{
+    display: none;
+}
+
+.details .manageproductpanel .productlists .foodinformations{
+    background-color: white;
+    width: 300px;
+    display: flex;
+    height: fit-content;
+    padding: 20px;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.details .manageproductpanel .productlists .foodinformations img{
+    height: 100px;
+    object-fit: contain;
+    width: 80px;
+}
+
+.details .manageproductpanel .productlists .foodinformations .foodinfointext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.details .manageproductpanel .productlists 
+.foodinformations .foodinfointext #productname{
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.details .manageproductpanel .productlists 
+.foodinformations .foodinfointext #price{
+    font-size: 18px;
+
+}
+
+.details .manageproductpanel .productlists 
+.foodinformations .foodinfointext #price span{
+    font-weight: 600;
+}
+
+.details .manageproductpanel .productlists 
+.foodinformations .foodinfointext div{
+    padding: 5px 0;
+}
+
+.details .manageproductpanel .productlists 
+.foodinformations .foodinfointext div button{
+    background-color: #c41316;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: thin solid black;
+    border-radius: 8px;
+    width: 80px;
+    padding: 3px 0;
+    transition: all 300ms ease-out;
+}
+
+.details .manageproductpanel .productlists 
+.foodinformations .foodinfointext div button:hover{
+    scale: 1.05;
+}
+
+
+.filteringproductspanel{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.365);
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.filteringproductspanel .allcategories{
+    background-color: white;
+    border: thin solid black;
+    border-radius: 20px;
+    width: 400px;
+    height: 230px;
+    padding: 20px;
+    overflow: auto;
+    box-shadow: 8px 8px 15px black;
+    animation: popup 300ms ease-in-out;
+}
+
+.filteringproductspanel .allcategories::-webkit-scrollbar{
+    display: none;
+}
+
+.filteringproductspanel .allcategories .navsforfiltering{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filteringproductspanel .allcategories .navsforfiltering button{
+    background-color: #c41316;
+    color: white;
+    width: 80px;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.filteringproductspanel .allcategories ul{
+    list-style-type: none;
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+.filteringproductspanel .allcategories ul li{
+    padding: 5px 0;
+    padding-left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    border-radius: 10px;
+}
+
+.filteringproductspanel .allcategories ul li:hover{
+    background-color: #c41316;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+.details .manageaccountpanel{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    animation: popup 0.3s ease-in-out;
+}
+
+.details .manageaccountpanel.hiddendiv{
+    display: none;
+}
+
+.details .manageaccountpanel h2{
+    font-size: 1.8rem;
+    border: thin solid black;
+    padding: 8px 20px;
+    border-radius: 20px;
+    background-color: #c41316;
+    color: white;
+    text-shadow: 1px 1px black;
+    box-shadow: 5px 5px 10px black;
+}
+
+.details .manageaccountpanel .allaccounts{
+    width: 100%;
+    height: 500px;
+    background-color: #c41316;
+    border: thin solid black;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px black;
+    padding: 20px;
+    padding-top: 10px;
+    overflow: auto;
+    position: relative;
+}
+
+.details .manageaccountpanel .allaccounts table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.details .manageaccountpanel .allaccounts table th{
+    border-bottom: thin solid white;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+.details .manageaccountpanel .allaccounts table td{
+    color: white;
+    font-size: 16px;
+    padding: 5px 0;
+    cursor: pointer;
+    transition: all 350ms ease-in-out;
+}
+
+.details .manageaccountpanel .allaccounts table td button{
+    background-color: transparent;
+    border: thin solid white;
+    border-radius: 10px;
+    transition: all 300ms ease-in-out;
+    margin: 0 4px;
+}
+
+.details .manageaccountpanel .allaccounts table td button:hover{
+    scale: 1.08;
+}
+
+.details .manageaccountpanel .allaccounts table td button img{
+    filter: invert(100%);
+    object-fit: contain;
+}
+
+.details .manageaccountpanel .allaccounts table tbody tr{
+    transition: all 300ms ease-in-out;
+    border-radius: 20px;
+}
+
+.details .manageaccountpanel .allaccounts table tbody td.actiontd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .details .manageaccountpanel .allaccounts table tbody tr:hover{
+    background-color: white;
+}
+
+.details .manageaccountpanel .allaccounts table tbody tr:hover td{
+    color: black;
+}
+
+.details .manageaccountpanel .allaccounts table tbody tr:hover td button{
+    border: thin solid black;
+}
+
+.details .manageaccountpanel .allaccounts table tbody tr:hover td button img{
+    filter: invert(0%);
+} */
 
 
 
-
-
-.hidediv{
+.hiddendiv{
     display: none;
 }
 
