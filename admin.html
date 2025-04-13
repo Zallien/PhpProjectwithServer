@@ -208,11 +208,16 @@
                 <h2>Manage Accounts</h2>
 
                 <div class="allaccounts">
+                    <div class="navsforemployees">
+                        <label for="">All Accounts</label>
+                        <button id="addaccountbutton">Add Account</button>
+                    </div>
+
                     <table>
                         <thead>
                             <tr>
                                 <th style="width: 5%;">No.</th>
-                                <th style="width: 10%;">Account ID</th>
+                                <th style="width: 10%;">Acc. ID</th>
                                 <th style="width: 40%;">Name</th>
                                 <th style="width: 15%;">Email</th>
                                 <th style="width: 20%;">Username</th>
@@ -253,6 +258,49 @@
                     <li>Family Meal</li>
                 </ul>
             </div>
+        </div>
+
+        <div class="addproductpanel hiddendiv">
+
+            <div class="addrproductform">
+                <h3>Add Product</h3>
+
+                <form action="">
+                    <div class="forimage">
+                        <label for="">Image</label>
+                        <div class="imgcontainer">
+                            <label for="" class="placeholderforimginput">Select an Image</label>
+                            <img id="displayImage">
+                        </div>
+                    </div>
+                    <input type="file" id="imageInput" accept="image/*">
+                    <div class="otherdivs">
+                        <label for="">Name</label>
+                        <input type="text" id="foodname">
+                    </div>
+                    <div class="otherdivs">
+                        <label for="">Price</label>
+                        <input type="number" id="foodname">
+                    </div>
+                    <div class="buttonsdiv">
+                        <button>Add</button>
+                        <button id="addproductBTNback">Back</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+        <div class="addaccountpanel hiddendiv">
+
+            <div class="addaccountformcontainer">
+                <div class="navsforaddaccount">
+                    <label for=" ">Add Account</label>
+                    <button id="addaccountbuttonback">Back</button>
+                </div>
+            </div>
+
+
         </div>
 
     </div>
