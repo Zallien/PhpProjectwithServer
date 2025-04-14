@@ -134,7 +134,8 @@
 .details .orderspanel{
     width: 100%;
     height: 100%;
-    padding: 20px;
+    padding: 20px 0;
+    padding-bottom: 0;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -155,6 +156,8 @@
     text-shadow: 1px 1px black;
     box-shadow: 5px 5px 10px black;
 }
+
+
 
 .details .orderspanel .orderscontainer{
     width: 100%;
@@ -233,7 +236,8 @@
 .details .manageproductpanel{
     width: 100%;
     height: 100%;
-    padding: 20px;
+    padding: 20px 0;
+    padding-bottom: 0;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -758,7 +762,7 @@
     border: thin solid black;
     border-radius: 20px;
     width: 400px;
-    height: 250px;
+    height: auto;
     padding: 20px;
     overflow: auto;
     box-shadow: 8px 8px 15px black;
@@ -770,6 +774,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .addaccountpanel .addaccountformcontainer .navsforaddaccount label{
@@ -788,6 +793,40 @@
     border: thin solid black;
 }
 
+.addaccountpanel .addaccountformcontainer form div{
+    padding: 3px 0;
+}
+
+.addaccountpanel .addaccountformcontainer form div label{
+    display: block;
+}
+
+.addaccountpanel .addaccountformcontainer form div input{
+    font-size: 18px;
+    width: 100%;
+    padding: 3px 0;
+    padding-left: 10px;
+    border: thin solid black;
+    border-radius: 10px;
+}
+
+.addaccountpanel .addaccountformcontainer form button{
+    display: block;
+    margin: 8px auto;
+    background-color: #c41316;
+    color: white;
+    text-shadow: 1px 1px black;
+    border: thin solid black;
+    border-radius: 12px;
+    padding: 8px 0;
+    width: 120px;
+    font-weight: bold;
+    transition: all 300ms ease-in-out;
+}
+
+.addaccountpanel .addaccountformcontainer form button:hover{
+    scale: 1.08;
+}
 
 
 
@@ -795,6 +834,140 @@
 
 .hiddendiv{
     display: none;
+}
+
+@media screen and (max-width: 1400px) and (max-height:700px) {
+    .topnav img{
+        width: 30px;
+    }
+
+    .topnav div label{
+        font-size: 18px;
+    }
+
+    .topnav div img{
+        width: 23px;
+    }
+
+    .main nav{
+        padding: 100px 0;
+        padding-bottom: 20px;
+    }
+
+    .main nav ul{
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    .main nav ul li{
+        font-size: 18px;
+        padding: 7px;
+    }
+
+    .details .dashboardpanel h2,
+    .details .orderspanel h2,
+    .details .manageproductpanel h2,
+    .details .manageaccountpanel h2{
+        font-size: 21px;
+    }
+
+    .details .orderspanel{
+        
+    }
+
+    .orderlists .orderinfo img.iconorder{
+        width: 50px;
+        height: 60px;
+    }
+
+    .details .orderspanel .orderscontainer{
+        height: 450px;
+    }
+
+    .orderlists .orderinfo label span{
+        font-size: 16px;
+    }
+
+    .orderlists .orderinfo label{
+        font-size: 14px;
+    }
+
+    .orderlists .orderinfo .orderstatus{
+        margin-top: 5px;
+
+    }
+
+    .orderlists .orderinfo .orderstatus img{
+        width: auto;
+        height: 20px;
+        object-fit: contain;
+        
+    }
+
+    .details .manageproductpanel .producscontainer{
+        height: 450px;
+    }
+
+    .details .manageproductpanel .navsforproducts label{
+        font-size: 18px;
+    }
+
+    .details .manageproductpanel .navsforproducts label button img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .details .manageproductpanel .navsforproducts #addproductBTN{
+        font-size: 16px;
+        width: 80pxs;
+    }
+
+    .details .manageproductpanel .productlists .foodinformations{
+        width: 250px;
+    }
+
+    .details .manageproductpanel .productlists .foodinformations img{
+        height: 70px;
+        width: 50px;
+    }
+
+    .details .manageproductpanel .productlists 
+    .foodinformations .foodinfointext #productname{
+        font-size: 18px;
+    }
+
+    .details .manageproductpanel .productlists 
+    .foodinformations .foodinfointext #price{
+        font-size: 15px;
+    }
+    
+    .details .manageproductpanel .productlists 
+    .foodinformations .foodinfointext div button{
+        width: 60px;
+        font-size: 14px;
+    }
+
+    .details .manageaccountpanel{
+        padding-bottom: 0;
+    }
+
+    .details .manageaccountpanel .allaccounts{
+        height: 450px;
+    }
+
+    .details .manageaccountpanel .allaccounts .navsforemployees label{
+        font-size: 18px;
+    }
+
+    .details .manageaccountpanel .allaccounts table th{
+        font-size: 18px;
+    }
+
+    .details .manageaccountpanel .allaccounts table td{
+        font-size: 14px;
+    }
+
+
 }
 
 
