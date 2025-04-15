@@ -30,6 +30,26 @@
     padding-top: 0;
 }
 
+.main .navtop{
+  width: 100%;
+  height: auto;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: end;
+  position: fixed;
+  top: 0;
+  color: white;
+}
+
+.main .navtop label{
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.main .foradmin{
+  padding: 20px 0;
+}
+
 .centerdiv .selection{
   width: 100%;
   display: flex;
@@ -66,10 +86,10 @@
 }
 
 .main .centerdiv form h2{
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     text-align: center;
     padding: 20px 0;
-    padding-top: 0;
+    padding-top: 10px;
     color: rgb(231, 224, 224);
 }
 
