@@ -10,7 +10,6 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    
 }
 
 .main nav{
@@ -24,7 +23,7 @@
     flex-grow: 0;
 }
 
-.main nav img{
+.main nav .naviconjabee{
     width: 30px;
     height: 30px;
 }
@@ -76,6 +75,20 @@
     border-radius: 10px;
     background-color: #c41316;
     box-shadow: 3px 3px 10px black;
+    padding: 20px 10px;
+    overflow: auto;
+}
+
+.main .details .allorders .ordercontainers::-webkit-scrollbar{
+    display: none;
+}
+
+.main .details .allorders .ordercontainers .allordersgrid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 20px;
+    column-gap: 10px;
+    justify-items: center;
 }
 
 .main .details .allorders .ordercontainers .allordersgrid .ordersinfo{
@@ -90,7 +103,8 @@
 .main .details .allorders .ordercontainers .allordersgrid .ordersinfo .iconorder{
     width: 50px;
     display: block;
-    margin: 10px auto;
+    margin: 20px auto;
+    margin-top: 10px;
 }
 
 .main .details .allorders .ordercontainers .allordersgrid .ordersinfo label{
@@ -106,10 +120,78 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    background-color: #c41316;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 0;
 }
 
 
 .main .details .orderdetails{
     width: 300px;
     border: thin solid black;
+    background-color: #c41316;
+    border-radius: 10px;
+    color: white;
+    position: relative;
+}
+
+.main .details .orderdetails h3{
+    text-align: center;
+    padding: 10px 0;
+}
+
+.main .details .orderdetails .fullorders{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main .details .orderdetails .fullorders .dateandtime{
+    font-size: 14px;
+    padding: 10px 20px;
+    border-bottom: thin solid white;
+    padding-bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.main .details .orderdetails table{
+    width: 100%;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.main .details .orderdetails table thead th{
+    font-size: 18px;
+}
+
+.main .details .orderdetails table tbody td{
+    font-size: 16px;
+}
+
+.main .details .orderdetails #OrderComplete{
+    font-size: 18px;
+    font-weight: bold;
+    border: thin solid black;
+    border-radius: 20px;
+    padding: 8px 0;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 20px 0;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+}
+
+.main .details .orderdetails #OrderComplete:hover{
+    background-color: #890f11;
+    color: white;
+    box-shadow: 0 0 20px white, 0 0 30px rgb(193, 70, 70);
 }
