@@ -84,27 +84,27 @@
 }
 
 .main .details .allorders .ordercontainers .allordersgrid{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    row-gap: 20px;
-    column-gap: 10px;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .main .details .allorders .ordercontainers .allordersgrid .ordersinfo{
     background-color: white;
-    width: fit-content;
+    width: 100%;
     display: flex;
-    flex-direction: column;
     padding: 10px;
     border-radius: 10px;
+    justify-content: space-between;
+    margin: 8px 0;
 }
 
 .main .details .allorders .ordercontainers .allordersgrid .ordersinfo .iconorder{
     width: 50px;
-    display: block;
-    margin: 20px auto;
-    margin-top: 10px;
+}
+
+.main .details .allorders .ordercontainers .allordersgrid .ordersinfo .orderdetailsintext{
+    display: flex;
+    flex-direction: column;
 }
 
 .main .details .allorders .ordercontainers .allordersgrid .ordersinfo label{
@@ -119,11 +119,11 @@
 .main .details .allorders .ordercontainers .allordersgrid .ordersinfo .orderstatus{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    flex-direction: column;
     background-color: #c41316;
     border-radius: 10px;
     color: white;
-    padding: 5px 0;
+    padding: 5px 10px;
 }
 
 
